@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import { styled } from '@mui/material/styles';
 
-export const TopHeaderButton = styled(Button)({
+export const TopNavButton = styled(Button)({
     color: '#fafcfe',
     boxShadow: 'none',
     textTransform: 'none',
@@ -37,7 +37,7 @@ export const TopHeaderButton = styled(Button)({
     },
 });
 
-export const BottomHeaderButton = styled(Button)({
+export const BottomNavButton = styled(Button)({
     color: '#fafcfe',
     boxShadow: 'none',
     textTransform: 'none',

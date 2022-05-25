@@ -1,5 +1,8 @@
 .toolbar {
-    background-color: #080808;
+    background: rgba( 44, 38, 56, 0.75 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
     padding: 8px;
 }
 
@@ -15,10 +18,11 @@
 }
 
 .main_div_mobile {
-    padding:22vh;
+    padding:18vh;
     justify-content: center;
     display:flex;
-    background-color: #110b1a;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(27, 0, 10, 0.37);
 }
 
 .toolbar_mobile_under {

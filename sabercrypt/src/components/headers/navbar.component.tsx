@@ -1,5 +1,5 @@
 /*
-    main_header.component serves the web application header only.
+    navbar.component serves the web application header only.
     isMobile handles at theme.breakpoints.up-md
 */
 import React from 'react';
@@ -8,9 +8,9 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from '@mui/material/styles'
-import { TopHeaderButton, BottomHeaderButton } from "../buttons/main_header_buttons.styles";
-import "./main_header.styles.css";
+import { TopNavButton, BottomNavButton } from "../buttons/main_header_buttons.styles";
 
+import "./navbar.styles.css";
 import SaberCircle from "../../assets/SaberCircle.png"
 
 const MainHeader = () => {
@@ -24,15 +24,15 @@ const MainHeader = () => {
                         <img src={SaberCircle}
                              className="mainHeaderSvg"
                              alt="mainHeaderSvg"
-                             width={80}
+                             width={35}
                         />
                         <div className="title">
                             <h2>SaberCrypt</h2>
                         </div>
                         <div className="button_stack">
                             <Stack spacing={2} direction="row">
-                                <TopHeaderButton href="crypto">Crypto</TopHeaderButton>
-                                <TopHeaderButton href="market">Market</TopHeaderButton>
+                                <TopNavButton href="crypto">Crypto</TopNavButton>
+                                <TopNavButton href="market">Market</TopNavButton>
                             </Stack>
                         </div>
                     </Toolbar>
@@ -56,10 +56,10 @@ const MainHeader = () => {
                     <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
                         <Toolbar className="toolbar_mobile_under">
                             <Stack spacing={3} direction="row">
-                                <BottomHeaderButton href="crypto">Crypto</BottomHeaderButton>
-                                <BottomHeaderButton href="market">Market</BottomHeaderButton>
-                                <BottomHeaderButton href="market">Art</BottomHeaderButton>
-                                <BottomHeaderButton href="market">Omega</BottomHeaderButton>
+                                <BottomNavButton href="crypto">Crypto</BottomNavButton>
+                                <BottomNavButton href="market">Market</BottomNavButton>
+                                <BottomNavButton href="market">Art</BottomNavButton>
+                                <BottomNavButton href="market">Omega</BottomNavButton>
                             </Stack>
                         </Toolbar>
                     </AppBar>
