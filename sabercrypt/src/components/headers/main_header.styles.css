@@ -14,11 +14,17 @@
     padding:8px;
 }
 
-.toolbar_mobile {
-    padding:30vh;
+.main_div_mobile {
+    padding:22vh;
     justify-content: center;
     display:flex;
     background-color: #110b1a;
+}
+
+.toolbar_mobile_under {
+    justify-content: center;
+    display:flex;
+    background-color: #311a46;
 }
 
 .mainHeaderSvg_mobile {
@@ -28,4 +34,5 @@
 .title_mobile {
     justify-content: space-evenly;
     font-family: "Lucida Console", serif;
+    color:white;
 }

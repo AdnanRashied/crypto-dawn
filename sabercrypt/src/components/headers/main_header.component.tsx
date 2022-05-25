@@ -8,7 +8,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from '@mui/material/styles'
-import { ContainedButton } from "../buttons/main_header_buttons.styles";
+import { TopHeaderButton, BottomHeaderButton } from "../buttons/main_header_buttons.styles";
 import "./main_header.styles.css";
 
 import SaberCircle from "../../assets/SaberCircle.png"
@@ -31,8 +31,8 @@ const MainHeader = () => {
                         </div>
                         <div className="button_stack">
                             <Stack spacing={2} direction="row">
-                                <ContainedButton href="crypto">Crypto</ContainedButton>
-                                <ContainedButton href="market">Market</ContainedButton>
+                                <TopHeaderButton href="crypto">Crypto</TopHeaderButton>
+                                <TopHeaderButton href="market">Market</TopHeaderButton>
                             </Stack>
                         </div>
                     </Toolbar>
@@ -40,9 +40,7 @@ const MainHeader = () => {
 
             </>
             ):(
-
-                <AppBar className="appbar_mobile" position={"sticky"}>
-                    <Toolbar className="toolbar_mobile">
+                <div className="main_div_mobile">
                         <figure className="item">
                         <img src={SaberCircle}
                              className="mainHeaderSvg_mobile"
@@ -51,10 +49,21 @@ const MainHeader = () => {
                         />
                         <figcaption className="title_mobile">
                             <h2>SaberCrypt</h2>
-                        </figcaption>
-                        </figure>
-                    </Toolbar>
-                </AppBar>
+                            <h3>Trade, Stake, Options, Arbitrage </h3>
+                            <h5>Welcome to the New era of Finances </h5>
+                         </figcaption>
+                    </figure>
+                    <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+                        <Toolbar className="toolbar_mobile_under">
+                            <Stack spacing={3} direction="row">
+                                <BottomHeaderButton href="crypto">Crypto</BottomHeaderButton>
+                                <BottomHeaderButton href="market">Market</BottomHeaderButton>
+                                <BottomHeaderButton href="market">Art</BottomHeaderButton>
+                                <BottomHeaderButton href="market">Omega</BottomHeaderButton>
+                            </Stack>
+                        </Toolbar>
+                    </AppBar>
+                </div>
             )}
         </div>
 )};
