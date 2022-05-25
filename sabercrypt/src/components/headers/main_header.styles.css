@@ -13,3 +13,19 @@
     justify-content: right;
     padding:8px;
 }
+
+.toolbar_mobile {
+    padding:30vh;
+    justify-content: center;
+    display:flex;
+    background-color: #110b1a;
+}
+
+.mainHeaderSvg_mobile {
+    width:150px;
+    display:flex;
+}
+.title_mobile {
+    justify-content: space-evenly;
+    font-family: "Lucida Console", serif;
+}
