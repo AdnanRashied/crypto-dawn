@@ -1,0 +1,15 @@
+.toolbar {
+    background-color: #080808;
+    padding: 8px;
+}
+
+.title {
+    font-family: "Lucida Console", serif;
+    padding:8px;
+}
+.button_stack {
+    display:flex;
+    flex: 1;
+    justify-content: right;
+    padding:8px;
+}
