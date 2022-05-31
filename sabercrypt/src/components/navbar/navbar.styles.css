@@ -1,8 +1,5 @@
 .toolbar {
-    background: rgba( 44, 38, 56, 0.75 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
+    background: #0a0a0a;
     padding: 8px;
 }
 
@@ -10,6 +7,7 @@
     font-family: "Lucida Console", serif;
     padding:8px;
 }
+
 .button_stack {
     display:flex;
     flex: 1;
@@ -35,6 +33,7 @@
     width:150px;
     display:flex;
 }
+
 .title_mobile {
     justify-content: space-evenly;
     font-family: "Lucida Console", serif;

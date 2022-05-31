@@ -1,0 +1,23 @@
+.item-block-left {
+ float:left;
+ text-align: center;
+ padding-top: 5px;
+ padding-left: 8px;
+ padding-bottom: 2px;
+}
+
+.coin-title{
+ font-size: 20px;
+ font-family: "Droid Sans Mono Dotted",sans-serif;
+}
+
+.item-block-right {
+ float:right;
+ padding-right:8px;
+}
+
+.price {
+ font-size: 20px;
+ font-family: "Droid Sans Mono Dotted",sans-serif;
+
+}
