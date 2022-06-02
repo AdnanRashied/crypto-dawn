@@ -18,12 +18,13 @@ const Item = styled(Paper)(({ theme }) => ({
 const Item2 = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#ff65d4',
     ...theme.typography.body2,
-    padding: theme.spacing(2),
+    padding: theme.spacing(10),
     alignContent:'center',
     textAlign: 'center',
     alignItems: 'center',
     border: '1px solid rgba( 255, 255, 255, 0.18 )',
     boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
+    color:'white'
 }));
 const Item3 = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#d8ff2b',
@@ -40,7 +41,7 @@ export const CryptoCurrencyCard = ( props: CryptoListProps ) => {
       <Grid sx={{flowGrow:1}} container spacing={1}>
           <Grid item xs={12}>
               <Grid container justifyContent="center" spacing={3}>
-                  {cryptoSelection.map(coin => (
+                  {cryptoSelection.map((coin: { key: string | number | null | undefined; imageUrl: string | undefined; title: any; }) => (
                       <Grid key={coin.key} item>
                           <Paper
                               sx={{
@@ -52,34 +53,34 @@ export const CryptoCurrencyCard = ( props: CryptoListProps ) => {
                                   boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
                                   border: '1px solid rgba( 255, 255, 255, 0.18 )'
                               }}>
-                                      <Stack
-                                          spacing={2}
-                                          direction="column"
-                                          alignItems="stretch"
-                                          justifyContent="center"
-                                      >
-                                      <Item>
-                                            <div className="itemWrap">
-                                                <div className="item-block-left">
-                                                      <img className="iconTitle"
-                                                           src={coin.imageUrl}  
-                                                           alt="imageIcon" 
-                                                           width={50}
-                                                      />
-                                                    <figcaption
-                                                        className="coin-title">
-                                                        {coin.title}
-                                                    </figcaption>
-                                                </div>
-                                                <div className="item-block-right">
-                                                    <a className="price">
-                                                        $30,000
-                                                    </a>
-                                                </div>
-                                          </div>
+                                  <Stack
+                                      spacing={2}
+                                      direction="column"
+                                      alignItems="stretch"
+                                      justifyContent="center"
+                                  >
+                                  <Item>
+                                <div className="itemWrap">
+                                        <div className="item-block-left">
+                                              <img className="iconTitle"
+                                                   src={coin.imageUrl}
+                                                   alt="imageIcon"
+                                                   width={50}
+                                              />
+                                                <figcaption
+                                                    className="coin-title">
+                                                    {coin.title}
+                                                </figcaption>
+                                        </div>
+                                            <div className="item-block-right">
+                                                <a className="price">
+                                                    $30,000
+                                                </a>
+                                            </div>
+                                </div>
                                     </Item>
                                     <Item2>
-                                        
+                                        Graphs MetaData
                                     </Item2>
                               </Stack>
                           </Paper>
