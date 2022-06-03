@@ -63,6 +63,24 @@ const cryptoList = {
             imageUrl:"https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/trx.svg",
             key:10
         },
+        {
+            title: "Uniswap",
+            subtitle:"Untilted",
+            imageUrl:"https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/uni.svg",
+            key:11
+        },
+        {
+            title: "Binance Coin",
+            subtitle:"Untilted",
+            imageUrl:"https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/bnb.svg",
+            key:12
+        },
+        {
+            title: "File Coin",
+            subtitle:"Untilted",
+            imageUrl:"https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/fil.svg",
+            key:13
+        },
     ]
 };
 
