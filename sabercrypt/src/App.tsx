@@ -9,7 +9,6 @@ function App() {
     <div className="App">
     <MainHeader/>
       <header className="App-header">
-        <h1></h1>
         <Market/>
       </header>
     </div>

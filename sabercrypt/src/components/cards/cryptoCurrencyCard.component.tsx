@@ -2,7 +2,7 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
-import  CryptoList  from "../../interface/cryptoList.json";
+import  CryptoList  from "../../interface/JSON/cryptoList.json";
 import './cryptoCurrencyCard.styles.css';
 
 const Item = styled(Paper)(({ theme }) => ({
