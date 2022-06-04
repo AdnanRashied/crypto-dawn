@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import MainHeader from "./components/navbar/navbar.component"
-import Homepage from "../src/homepage.component";
+import Market from "../src/pages/market/market.component";
 import './App.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <MainHeader/>
       <header className="App-header">
         <h1></h1>
-        <Homepage/>
+        <Market/>
       </header>
     </div>
   );

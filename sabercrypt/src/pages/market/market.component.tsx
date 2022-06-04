@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
-import { CryptoCurrencyCard } from '../src/components/cards/cryptoCurrencyCard.component';
+import { CryptoCurrencyCard } from '../../components/cards/cryptoCurrencyCard.component';
 
-import './homepage.styles.css'
+import './market.styles.css'
 
 export default function Homepage() {
     const [ inputText, setInputText ] = useState("");
