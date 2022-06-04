@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import { CryptoCurrencyCard } from '../src/components/cards/cryptoCurrencyCard.component';
 
+import './homepage.styles.css'
+
 export default function Homepage() {
     const [ inputText, setInputText ] = useState("");
     let inputHandler = (event: { target: { value: any; }; }) => {
@@ -10,11 +12,13 @@ export default function Homepage() {
     };
     return (
         <div>
-             <div>
+             <div className="searchDiv">
                 <TextField
+                    className="searchField"
+                    type="search"
+                    size="medium"
                     id="outlined-basic"
-                    variant="outlined"
-                    fullWidth
+                    variant="standard"
                     label="Search"
                     onChange={inputHandler}
                 />

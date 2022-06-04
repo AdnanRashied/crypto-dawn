@@ -37,20 +37,23 @@ const Item3 = styled(Paper)(({ theme }) => ({
     alignItems: 'center'
 }));
 
-export const CryptoCurrencyCard = ( props:any ) => {
-    const filteredTiles = CryptoList.filter((element) => {
-        if (props.input === ''){
+export const CryptoCurrencyCard = ( props: { input: string; } ) => {
+    const searchIndex = props.input;
+    const searchTiles = CryptoList.filter((element) => {
+        if (searchIndex === ''){
+            console.log(searchIndex)
             return element;
         }
         else {
             return element.title.toLowerCase().includes(props.input)
         }
     })
+
     return (
       <Grid sx={{flowGrow:1}} container spacing={1}>
           <Grid item xs={12}>
               <Grid container justifyContent="center" spacing={3}>
-                  {filteredTiles.map((coin) => (
+                  {searchTiles.map((coin) => (
                       <Grid key={coin.key} item>
                           <Paper
                               sx={{

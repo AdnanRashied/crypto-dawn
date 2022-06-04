@@ -1,0 +1,9 @@
+.searchDiv {
+    padding: 20px;
+}
+
+.searchField {
+    background-color: white;
+    border-radius: 20px;
+    width:20vw;
+}
