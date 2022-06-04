@@ -32,7 +32,6 @@ const MainHeader = () => {
                     </div>
                     <div className="button_stack">
                         <Stack spacing={2} direction="row">
-                            <TopNavButton href="crypto">Crypto</TopNavButton>
                             <TopNavButton href="market">Market</TopNavButton>
                         </Stack>
                     </div>
