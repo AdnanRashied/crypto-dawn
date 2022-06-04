@@ -14,12 +14,11 @@ export default function Homepage() {
         <div>
              <div className="searchDiv">
                 <TextField
-                    className="searchField"
+                    size="small"
                     type="search"
-                    size="medium"
-                    id="outlined-basic"
-                    variant="standard"
                     label="Search"
+                    variant="standard"
+                    className="searchField"
                     onChange={inputHandler}
                 />
         </div>

@@ -1,11 +1,7 @@
-import { useState } from 'react';
-
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
-import TextField from '@mui/material/TextField';
-
 import  CryptoList  from "../../interface/cryptoList.json";
 import './cryptoCurrencyCard.styles.css';
 
@@ -42,7 +38,6 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
     const searchTiles = CryptoList.filter((element) => {
         if (searchIndex === ''){
             console.log(searchIndex)
-            return element;
         }
         else {
             return element.title.toLowerCase().includes(props.input)
@@ -73,7 +68,6 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
                               >
                               <Item>
                                 <div className="itemWrap">
-
                                         <div className="item-block-left">
                                               <img className="iconTitle"
                                                    src={coin.imageUrl}
@@ -87,14 +81,17 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
                                         </div>
                                             <div className="item-block-right">
                                                 <a className="price">
-                                                    $30,000
+                                                    $20,000
                                                 </a>
                                             </div>
-                                </div>
+                                        </div>
                                     </Item>
                                     <Item2>
                                         Graphs MetaData
                                     </Item2>
+                                  <Item3>
+                                      Button List
+                                  </Item3>
                               </Stack>
                           </Paper>
                       </Grid>

@@ -70,5 +70,11 @@
     "symbol": "FIL",
     "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/fil.svg",
     "key": 13
+  },
+  {
+    "title": "Dogecoin",
+    "symbol": "Doge",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/doge.svg",
+    "key": 14
   }
 ]
