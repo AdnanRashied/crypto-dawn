@@ -1,11 +1,13 @@
-import React from 'react';
+import { useState } from 'react';
+
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
+import TextField from '@mui/material/TextField';
 
-import { CryptoListProps } from "../../interface/cryptoList";
-import './cryptoCurrencyCard.styles.css'
+import  CryptoList  from "../../interface/cryptoList.json";
+import './cryptoCurrencyCard.styles.css';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#190061',
@@ -35,13 +37,20 @@ const Item3 = styled(Paper)(({ theme }) => ({
     alignItems: 'center'
 }));
 
-export const CryptoCurrencyCard = ( props: CryptoListProps ) => {
-    const { cryptoSelection } = props;
+export const CryptoCurrencyCard = ( props:any ) => {
+    const filteredTiles = CryptoList.filter((element) => {
+        if (props.input === ''){
+            return element;
+        }
+        else {
+            return element.title.toLowerCase().includes(props.input)
+        }
+    })
     return (
       <Grid sx={{flowGrow:1}} container spacing={1}>
           <Grid item xs={12}>
               <Grid container justifyContent="center" spacing={3}>
-                  {cryptoSelection.map((coin: { key: string | number | null | undefined; imageUrl: string | undefined; title: any; }) => (
+                  {filteredTiles.map((coin) => (
                       <Grid key={coin.key} item>
                           <Paper
                               sx={{
@@ -53,14 +62,15 @@ export const CryptoCurrencyCard = ( props: CryptoListProps ) => {
                                   boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
                                   border: '1px solid rgba( 255, 255, 255, 0.18 )'
                               }}>
-                                  <Stack
-                                      spacing={2}
-                                      direction="column"
-                                      alignItems="stretch"
-                                      justifyContent="center"
-                                  >
-                                  <Item>
+                              <Stack
+                                  spacing={2}
+                                  direction="column"
+                                  alignItems="stretch"
+                                  justifyContent="center"
+                              >
+                              <Item>
                                 <div className="itemWrap">
+
                                         <div className="item-block-left">
                                               <img className="iconTitle"
                                                    src={coin.imageUrl}

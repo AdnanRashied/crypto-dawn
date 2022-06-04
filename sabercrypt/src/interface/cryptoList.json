@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Bitcoin",
+    "symbol": "BTC",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/btc.svg",
+    "key": 1
+  },
+  {
+    "title": "Etherium",
+    "symbol": "ETH",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/eth.svg",
+    "key": 2
+  },
+  {
+    "title": "Solana",
+    "symbol": "SOL",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/sol.svg",
+    "key": 3
+  },
+  {
+    "title": "Cardano",
+    "symbol": "ADA",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/ada.svg",
+    "key": 4
+  },
+  {
+    "title": "Cosmic",
+    "symbol": "ATOM",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/atom.svg",
+    "key": 5
+  },
+  {
+    "title": "Polygon",
+    "symbol": "MATIC",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/matic.svg",
+    "key": 7
+  },
+  {
+    "title": "Chainlink",
+    "symbol": "LINK",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/link.svg",
+    "key": 8
+  },
+  {
+    "title": "Avae",
+    "symbol": "AAVE",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/aave.svg",
+    "key": 9
+  },
+  {
+    "title": "Tron",
+    "symbol": "TRX",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/trx.svg",
+    "key": 10
+  },
+  {
+    "title": "Uniswap",
+    "symbol": "UNI",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/uni.svg",
+    "key": 11
+  },
+  {
+    "title": "Binance Coin",
+    "symbol": "BNB",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/bnb.svg",
+    "key": 12
+  },
+  {
+    "title": "File Coin",
+    "symbol": "FIL",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/fil.svg",
+    "key": 13
+  }
+]
