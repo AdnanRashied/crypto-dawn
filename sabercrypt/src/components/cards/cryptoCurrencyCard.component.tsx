@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 import  CryptoList  from "../../interface/JSON/cryptoList.json";
 import './cryptoCurrencyCard.styles.css';
 
-const Item = styled(Paper)(({ theme }) => ({
+const Item = styled(Paper)(({ theme }) =>  ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#190061',
     borderRadius: 12,
     textAlign: 'left',
@@ -35,16 +35,15 @@ const Item3 = styled(Paper)(({ theme }) => ({
 
 export const CryptoCurrencyCard = ( props: { input: string; } ) => {
     const searchIndex = props.input;
-
     const searchTiles = CryptoList.filter((element) => {
         if (searchIndex === ''){
-            console.log(searchIndex)
+            return;
         }
         else {
-            return element.title.toLowerCase().includes(props.input)
+            return element.title.toLowerCase().includes(props.input) ||
+                   element.symbol.toLowerCase().includes(props.input)
         }
     });
-
     return (
       <Grid sx={{flowGrow:1}} container spacing={1}>
           <Grid item xs={12}>
@@ -69,24 +68,24 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
                               >
                               <Item>
                                 <div className="itemWrap">
-                                        <div className="item-block-left">
-                                              <img className="iconTitle"
-                                                   src={coin.imageUrl}
-                                                   alt="imageIcon"
-                                                   width={50}
-                                              />
-                                                <figcaption
-                                                    className="coin-title">
-                                                    {coin.title}
-                                                </figcaption>
+                                    <div className="item-block-left">
+                                          <img className="iconTitle"
+                                               src={coin.imageUrl}
+                                               alt="imageIcon"
+                                               width={50}
+                                          />
+                                            <figcaption
+                                                className="coin-title">
+                                                {coin.title}
+                                            </figcaption>
+                                    </div>
+                                        <div className="item-block-right">
+                                            <a className="price">
+                                                $20,000
+                                            </a>
                                         </div>
-                                            <div className="item-block-right">
-                                                <a className="price">
-                                                    $20,000
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </Item>
+                                </div>
+                            </Item>
                                     <Item2>
                                         Graphs MetaData
                                     </Item2>

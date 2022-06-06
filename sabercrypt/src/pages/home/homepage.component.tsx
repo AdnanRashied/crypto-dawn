@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import { CryptoCurrencyCard } from '../../components/cards/cryptoCurrencyCard.component';
 import SearchBar from '../../components/cards/search';
-import './market.styles.css'
 import {Box, Grid, Paper, styled} from "@mui/material";
 import events from "node:events";
 import AppBar from "@mui/material/AppBar";
 
-
-
-export default function Market() {
+export default function Homepage() {
 
     const [inputText, setInputText] = useState("");
     let inputHandler = (event: { target: { value: any; }; }) => {
@@ -18,13 +15,7 @@ export default function Market() {
     };
     return (
         <div>
-            <AppBar>
-               <SearchBar
-               change={inputHandler}/>
-            </AppBar>
-            <div>
-                <CryptoCurrencyCard input={inputText}/>
-            </div>
+           "Hi"
         </div>
 
     );

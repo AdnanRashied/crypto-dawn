@@ -1,18 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import MainHeader from "./components/navbar/navbar.component"
-import Market from "../src/pages/market/market.component";
-import './App.css';
+import {Route, Routes} from "react-router-dom";
+import Navbar from '.././src/components/navbar/navbar.component'
+import Home from '../src/pages/home/homepage.component'
+import Market from '../src/pages/market/market.component'
 
-function App() {
-  return (
-    <div className="App">
-    <MainHeader/>
-      <header className="App-header">
-        <Market/>
-      </header>
-    </div>
-  );
+export default function App(){
+  return(
+      <>
+        <Navbar/>
+          <div className="contain">
+            <Routes>
+              <Route path="/" element={<Home/> }/>
+              <Route path="/" element={<Market/> }/>
+            </Routes>
+
+          </div>
+        </>
+  )
 }
-
-export default App;
