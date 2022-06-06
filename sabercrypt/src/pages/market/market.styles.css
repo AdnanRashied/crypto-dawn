@@ -1,20 +1,16 @@
-/*.searchDiv {*/
-/*    margin-bottom: 40vh;*/
-/*    position:absolute;*/
-/*}*/
-
-.s {
-    min-height: 50vh;
+.search-field {
     display: flex;
+    min-height: 50vh;
     align-items: center;
     justify-content: center;
 }
 
-
-
-/*.showAll {*/
-/*    border-radius: 30px;*/
-/*    border-color: #61dafb;*/
-/*    margin-top: 20vh;*/
-/*    position:absolute;*/
-/*}*/
+.search-bar {
+    width: 40vw;
+    padding: 20px;
+    background-color: #282828;
+    border-color: #000029;
+    color:white;
+    font-size: 20px;
+    border-radius: 40px;
+}

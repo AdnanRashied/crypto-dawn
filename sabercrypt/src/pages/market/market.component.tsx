@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import Button from '@mui/material/Button';
 import { CryptoCurrencyCard } from '../../components/cards/cryptoCurrencyCard.component';
-import SearchBar from '../../components/cards/search';
 import './market.styles.css'
-import {Box, Grid, Paper, styled} from "@mui/material";
-import events from "node:events";
-import AppBar from "@mui/material/AppBar";
 
 export default function Market() {
-
     const [inputText, setInputText] = useState("");
     let inputHandler = (event: { target: { value: any; }; }) => {
         let lowerCase = event.target.value;
@@ -16,12 +10,12 @@ export default function Market() {
     };
     return (
         <>
-        <div className="s">
+        <div className="search-field">
             <input
                 type="search"
-                className="searchField"
-                placeholder="Search Cryptocurrency.."
+                className="search-bar"
                 onChange={inputHandler}
+                placeholder="Search Cryptocurrency.."
             />
         </div>
         <div className="x">
