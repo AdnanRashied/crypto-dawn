@@ -40,7 +40,7 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
             return;
         }
         else {
-            return element.title.toLowerCase().includes(props.input) ||
+            return element.title.toLowerCase().includes(props.input)  ||
                    element.symbol.toLowerCase().includes(props.input)
         }
     });

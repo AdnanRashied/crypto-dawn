@@ -8,8 +8,8 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from '@mui/material/styles'
-import { TopNavButton, BottomNavButton } from 
-        "../buttons/main_header_buttons.styles";
+import { TopNavButton, BottomNavButton } from
+        "../buttons/main_navbar_buttons.styles";
 
 import "./navbar.styles.css";
 import SaberCircle from "../../assets/SaberCircle.png"
