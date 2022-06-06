@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import { CryptoCurrencyCard } from '../../components/cards/cryptoCurrencyCard.component';
 
 import './market.styles.css'
@@ -13,14 +13,18 @@ export default function Homepage() {
     return (
         <div>
              <div className="searchDiv">
-                <TextField
-                    size="small"
+                <input
                     type="search"
-                    label="Search"
-                    variant="standard"
                     className="searchField"
+                    placeholder="Search Cryptocurrency.."
                     onChange={inputHandler}
                 />
+                <Button
+                    className="showAll"
+                    variant="contained"
+                >
+                    Show me all coins
+                </Button>
         </div>
             <div>
                 <CryptoCurrencyCard input={inputText}/>

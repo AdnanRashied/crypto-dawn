@@ -1,8 +1,16 @@
-.searchDiv {
-    padding: 20px;
+.searchField {
+    display:flex;
+    background-color: #fefcff;
+    border-radius: 25px;
+    border-color: #20181a;
+    font-size: large;
+    padding: 12px 45px;
+    width: 30vw;
+    color: black;
 }
 
-.searchField {
-    height:3vh;
-    width:20vw;
+.showAll {
+    border-radius: 30px;
+    border-color: #61dafb;
+
 }

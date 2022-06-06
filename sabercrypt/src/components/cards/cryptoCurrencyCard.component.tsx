@@ -35,6 +35,7 @@ const Item3 = styled(Paper)(({ theme }) => ({
 
 export const CryptoCurrencyCard = ( props: { input: string; } ) => {
     const searchIndex = props.input;
+
     const searchTiles = CryptoList.filter((element) => {
         if (searchIndex === ''){
             console.log(searchIndex)
@@ -42,7 +43,7 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
         else {
             return element.title.toLowerCase().includes(props.input)
         }
-    })
+    });
 
     return (
       <Grid sx={{flowGrow:1}} container spacing={1}>
