@@ -3,12 +3,13 @@ import {Route, Routes} from "react-router-dom";
 import Navbar from '.././src/components/navbar/navbar.component'
 import Home from '../src/pages/home/homepage.component'
 import Market from '../src/pages/market/market.component'
+import './App.css'
 
 export default function App(){
   return(
       <>
         <Navbar/>
-          <div className="contain">
+          <div className="App-header">
             <Routes>
               <Route path="/" element={<Home/> }/>
               <Route path="/" element={<Market/> }/>
