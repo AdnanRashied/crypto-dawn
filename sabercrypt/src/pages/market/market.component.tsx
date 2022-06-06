@@ -7,8 +7,6 @@ import {Box, Grid, Paper, styled} from "@mui/material";
 import events from "node:events";
 import AppBar from "@mui/material/AppBar";
 
-
-
 export default function Market() {
 
     const [inputText, setInputText] = useState("");
@@ -17,15 +15,19 @@ export default function Market() {
         setInputText(lowerCase.toLowerCase());
     };
     return (
-        <div>
-            <AppBar>
-               <SearchBar
-               change={inputHandler}/>
-            </AppBar>
-            <div>
-                <CryptoCurrencyCard input={inputText}/>
-            </div>
+        <>
+        <div className="s">
+            <input
+                type="search"
+                className="searchField"
+                placeholder="Search Cryptocurrency.."
+                onChange={inputHandler}
+            />
         </div>
+        <div className="x">
+            <CryptoCurrencyCard input={inputText}/>
+        </div>
+            </>
 
     );
 }

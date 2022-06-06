@@ -1,0 +1,10 @@
+.App-Style {
+  min-height: 100vh;
+
+  background-color: #282c34;
+  background-image: url("../../assets/background.jpg");
+  background-size:cover;
+  background-blend-mode: multiply;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
