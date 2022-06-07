@@ -6,8 +6,8 @@ import  CryptoList  from "../../interface/JSON/cryptoList.json";
 import './cryptoCurrencyCard.styles.css';
 import React from "react";
 
-const Item = styled(Paper)(({ theme })  =>  ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#190061',
+const Item = styled(Paper)(({ theme })  => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#525c7f' : '#525c7f',
     borderRadius: 12,
     textAlign: 'left',
     color:'white',
@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme })  =>  ({
     boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
 }));
 const Item2 = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#ff65d4',
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#495376',
     ...theme.typography.body2,
     padding: theme.spacing(10),
     alignContent:'center',
@@ -26,7 +26,7 @@ const Item2 = styled(Paper)(({ theme }) => ({
     color:'white'
 }));
 const Item3 = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#d8ff2b',
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#3c4669',
     ...theme.typography.body2,
     padding: theme.spacing(2),
     alignContent:'center',
@@ -54,15 +54,16 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
                           <Paper
                               sx={{
                                   height: 390,
-                                  width: 290,
-                                  background: "rgba(40,40,40,0.65)",
+                                  width: 280,
+                                  background: "rgba(64,74,109,0.65)",
                                   borderColor: "#FFFFFF",
                                   borderRadius: 3,
                                   boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
-                                  border: '1px solid rgba( 255, 255, 255, 0.18 )'
+                                  border: '1px solid rgba( 255, 255, 255, 0.18 )',
+                                  padding:0.5
                               }}>
                               <Stack
-                                  spacing={2}
+                                  spacing={3}
                                   direction="column"
                                   alignItems="stretch"
                                   justifyContent="center"
