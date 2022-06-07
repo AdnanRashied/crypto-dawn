@@ -4,8 +4,9 @@ import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import  CryptoList  from "../../interface/JSON/cryptoList.json";
 import './cryptoCurrencyCard.styles.css';
+import React from "react";
 
-const Item = styled(Paper)(({ theme }) =>  ({
+const Item = styled(Paper)(({ theme })  =>  ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#190061',
     borderRadius: 12,
     textAlign: 'left',
@@ -37,7 +38,7 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
     const searchIndex = props.input;
     const searchTiles = CryptoList.filter((element) => {
         if (searchIndex === ''){
-            return;
+            return null;
         }
         else {
             return element.title.toLowerCase().includes(props.input)  ||
@@ -53,7 +54,7 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
                           <Paper
                               sx={{
                                   height: 390,
-                                  width: 280,
+                                  width: 290,
                                   background: "rgba(40,40,40,0.65)",
                                   borderColor: "#FFFFFF",
                                   borderRadius: 3,
@@ -80,9 +81,9 @@ export const CryptoCurrencyCard = ( props: { input: string; } ) => {
                                             </figcaption>
                                     </div>
                                         <div className="item-block-right">
-                                            <a className="price">
+                                            <p className="price">
                                                 $20,000
-                                            </a>
+                                            </p>
                                         </div>
                                 </div>
                             </Item>
